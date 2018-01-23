@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Max2 {
+
+		static public int max2(int x, int y) {
+			
+			
+			if(x > y) {
+				return x;
+			}else {
+				return y;
+			}
+			
+			
+			
+		}
+
+		
+		
+static public int Max3(int a, int b, int c) {
+	
+	while(a - b > 0  || a -c > 0 ) {
+break;			
+	}
+	return a;
+	
+	
+	
+}
+		
+		public static void main(String [] args) {
+			
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Entrez deux entiers");
+			System.out.print("x = ");
+			int x = sc.nextInt();
+			System.out.print("y = ");
+			int y = sc.nextInt();
+			System.out.println("Le maximum de x et y vaut " + max3(a,b,c));
+			
+		}
+
+	
+}

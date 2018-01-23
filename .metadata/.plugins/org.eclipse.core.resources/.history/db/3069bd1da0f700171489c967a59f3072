@@ -1,0 +1,5 @@
+
+public class IsLandVehicule {
+int getNumWheel();
+int setNumWHeel()
+}

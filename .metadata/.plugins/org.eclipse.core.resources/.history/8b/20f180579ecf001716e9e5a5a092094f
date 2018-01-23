@@ -1,0 +1,56 @@
+
+public class Exercice2 {
+
+	
+	
+	
+	
+	public static void triangle3(int n) {
+			for(int i = 0; i < n; i++){
+				for(int space = 0; space <= (n-1)-i; space++)
+					System.out.print(" ");
+				for(int stars = 0; stars <= i * 2; stars++)
+					System.out.print("*");
+				System.out.println("");
+			}
+		}
+	
+	
+	public static void triangle2(int n) {
+		char tab[] = new char [n];
+		
+		
+		char a = '*';
+		
+
+
+		for(int i = 0; i < tab.length/2 ; i++) {
+			
+
+			
+			
+			tab [ n/2 + i  ] = a;
+			tab [n/2 -i ] = a;
+			
+			
+			System.out.println(tab);
+			}
+		
+		
+		
+		}
+		
+		
+		
+
+		
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		triangle3(27);
+
+	}
+
+}

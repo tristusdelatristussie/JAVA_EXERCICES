@@ -1,0 +1,7 @@
+
+public interface IsSeaVessel {
+
+	getDisplacement();
+	setDisplacement(int a);
+	
+}

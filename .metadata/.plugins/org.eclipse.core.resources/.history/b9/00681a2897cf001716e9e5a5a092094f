@@ -1,0 +1,46 @@
+
+public class Exercice2 {
+
+	
+	
+	
+	
+	public static void triangle3(int n) {
+		
+	}
+	
+	
+	public static void triangle2(int n) {
+		char tab[] = new char [n];
+		
+		
+		char a = '*';
+		
+		tab [n/2+1] = a;
+		
+		for(int i = 0; i < tab.length ; i++) {
+			
+			System.out.println(tab);
+		
+		
+		
+		
+		}
+		
+		
+		
+
+		
+//		for(int j = 0 ; j < tab.length; j ++) {
+//			System.out.print(tab [j] );
+//	
+//		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		triangle2(6);
+
+	}
+
+}

@@ -1,0 +1,35 @@
+
+public class Helloworld {
+	
+	static int a = 10;
+	static int b = 20;
+	static int c = 50;
+	static int res;
+	
+	res = (a+b)*c;
+	static int calcul() {
+		return res;
+	}
+
+	public static void affichage() {
+		System.out.println("coucou");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/* 
+		 * 
+		 */
+		System.out.println("Hello");
+		
+		affichage();
+		
+		
+		int a =4;
+		int b =5;
+		
+		System.out.println("Resultat :" + (a+b));
+		
+		System.out.println(calcul());
+	}
+
+}

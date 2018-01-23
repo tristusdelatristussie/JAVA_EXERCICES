@@ -1,0 +1,23 @@
+
+public class Exercice2 {
+
+	public static void triangle2(int n) {
+		int [] tab = new int [n*2];
+
+		
+		for(int i=1; i <n; i++) {
+			sapin = "*" + sapin + "*";
+			
+			System.out.println(espace + sapin + espace);
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		triangle2(6);
+
+	}
+
+}

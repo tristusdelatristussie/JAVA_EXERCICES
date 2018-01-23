@@ -1,0 +1,41 @@
+import javax.swing.JFrame;
+
+public class Calculatrice extends JFrame {
+	
+	/*
+	 * 
+	 * Voyons maintenant ce dont nous avons besoin pour parvenir à nos fins :
+
+autant de boutons qu'il en faut ;
+
+autant de conteneurs que nécessaire ;
+
+un JLabel pour l'affichage ;
+
+un booléen pour savoir si un opérateur a été sélectionné ;
+
+un booléen pour savoir si nous devons effacer ce qui figure à l'écran et écrire un nouveau nombre ;
+
+nous allons utiliser une variable de type double pour nos calculs ;
+
+il va nous falloir des classes internes qui implémenteront l'interface ActionListener ;
+
+et c'est à peu près tout.
+
+Pour alléger le nombre de classes internes, vous pouvez en créer une qui se chargera d'écrire ce qui doit être affiché à l'écran. Utilisez la méthode getSource() pour savoir sur quel bouton on a cliqué.
+
+Je ne vais pas tout vous dire, il faut que vous cherchiez par vous-mêmes : la réflexion est très importante ! En revanche, vous devez savoir que la correction que je vous fournis n'est pas la correction. Il y a plusieurs solutions possibles. Je vous propose seulement l'une d'elles.
+
+Allez, au boulot !
+
+
+	 */
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

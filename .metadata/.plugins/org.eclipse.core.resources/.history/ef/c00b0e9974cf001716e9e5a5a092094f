@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Max2 {
+
+		static public int max2() {
+			
+		}
+
+		
+		public static void main(String [] args) {
+			
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Entrez deux entiers");
+			System.out.println("x = ");
+			int x = sc.nextInt();
+			System.out.println("y = ");
+			int y = sc.nextInt();
+			System.out.println("Le maximum de x et y vaut " + max2(x,y));
+			
+		}
+
+	
+}

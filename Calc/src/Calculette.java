@@ -1,0 +1,53 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+/*
+ Nous allons tout de suite voir ce dont notre calculatrice devra être capable :
+
+Effectuer un calcul simple : 12 + 3 par exemple.
+
+Faire des calculs à la chaîne, par exemple : 1 + 2 + ... ; lorsqu'on clique à nouveau sur un opérateur, il faut afficher le résultat du calcul précédent.
+
+Donner la possibilité de tout recommencer à zéro.
+
+Gérer l'exception d'une division par 0 !
+
+
+ */
+
+public class Calculette extends JFrame implements ActionListener{
+
+	
+	JLabel texte = new JLabel();
+
+	double ent1;
+	
+	boolean selected;
+	
+	boolean clear;
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+}

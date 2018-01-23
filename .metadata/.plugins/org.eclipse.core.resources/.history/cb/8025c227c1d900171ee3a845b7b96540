@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExoArray {
+
+	
+	
+	/*
+	 * 
+	 * Ex.1
+En utilisant la classe ArrayList, créez un programme qui:
+1. reçoit 20 valeurs numériques réelles de l'utilisateur.
+2. calcule le nombre de valeurs qui sont supérieures à la moyenne.
+
+	 */
+	
+	
+	
+	public class exo1 {
+		
+		static ArrayList<Integer> val = new ArrayList<>();
+		
+		static Scanner sc = new Scanner(System.in);
+		
+		public void adding20() {
+			
+			val.add(sc.nextInt());
+			
+		}
+
+		
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

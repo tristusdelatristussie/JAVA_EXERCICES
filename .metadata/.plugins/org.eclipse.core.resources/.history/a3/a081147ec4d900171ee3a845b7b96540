@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExoArray {
+
+	
+	
+	/*
+	 * 
+	 * Ex.1
+En utilisant la classe ArrayList, créez un programme qui:
+1. reçoit 20 valeurs numériques réelles de l'utilisateur.
+2. calcule le nombre de valeurs qui sont supérieures à la moyenne.
+
+	 */
+	
+	
+	
+	public class exo1 {
+		
+		ArrayList<Integer> val = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		public void adding20() {
+			
+			val.add(sc.nextInt());
+			
+		}
+
+		
+		public void nbresupetinf() {
+			
+			int min = 0;
+			int max = 0;
+			int moy = 0;
+			int som = 0;
+			
+			
+			for(int i = 0; i < val.size(); i ++) {
+				if (val.get(i) == 0) {
+					min = val.get(0);
+					max = val.get(0);
+				}
+				else if(val.get(i)<min) {
+					min = val.get(i);
+				}else if(val.get(i)>max) {
+					max = val.get(i);
+				}
+				
+			for(int j = 0; i < val.size(); j++) {
+				som += val.get(j);
+				moy = som/val.size();
+			}
+				
+			System.out.println("Nbre sup " + max + "Nbre inf " + min);
+				
+				}
+			
+		}
+		
+		public void moyenne() {
+			
+		}
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

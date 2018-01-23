@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class ChallengePendu {
+	
+	
+	
+	Scanner sc = new Scanner(System.in);
+	
+	String let = sc.nextLine();
+	
+	
+	public static void partie(String mot) {
+		
+		int c = mot.length();
+		
+
+		
+		
+		for(int i = 0; i < c; i++) {
+			
+			 
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

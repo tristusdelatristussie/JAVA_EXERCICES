@@ -1,0 +1,61 @@
+import java.util.Hashtable;
+import java.util.Scanner;
+
+public class Exo2 {
+	 static Hashtable<String,Integer> comptes = new Hashtable<String,Integer>();
+
+	    static Scanner sc = new Scanner(System.in);
+
+	    public static Hashtable<String,Integer> ajouter(){
+
+	        System.out.println("Entrez le nom du compte a ajouter et ensuite son numero :");
+
+	        String nom = sc.next();
+
+	        Integer compt = sc.nextInt();
+
+	        comptes.put(nom,compt);
+
+	        System.out.println("Compte ajouté" + comptes.toString());
+	        return comptes;
+
+
+	    }
+
+	    public static Hashtable<String,Integer> supprimer(){
+
+	        System.out.println("Entrez le nom du compte a supprimer ou le numero du compte  :");
+	        String ent = sc.next();
+
+	        comptes.remove(ent);
+
+
+	        for(int i = 0; i < comptes.size(); i++){
+	            if(comptes.containsValue(ent)){
+	                comptes.remove(i);
+	                System.out.println(comptes.toString());
+	            }
+	            if(comptes.containsKey(ent)){
+	                comptes.remove(i);
+	                System.out.println(comptes.toString());
+
+	            }
+	        }
+	        return comptes;
+
+	    }
+
+
+	 /*   public static Hashtable<String,Integer> trier(){
+	        return comptes
+
+	    }
+
+	    */
+
+	    public static void main(String [] args){
+	        ajouter();
+	        supprimer();
+	    }
+
+}

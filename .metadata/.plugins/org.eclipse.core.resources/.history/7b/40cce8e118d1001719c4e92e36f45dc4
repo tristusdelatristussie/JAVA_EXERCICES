@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class Pendu {
+	
+	
+	static void Partie(String mot) {
+		
+		
+		boolean vu[] = new boolean[mot.length()];
+		
+		for(int i=0; i <vu.length-1; i++) {
+			vu[i]=false;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entrez une lettre : ");
+
+		while(partieFinie(vu)==false) {
+		System.out.println("Entrez une lettre : ");
+		char let = sc.nextLine().charAt(0);
+		
+		char[] mot1 = motVersTab(mot);
+		
+		metAJour(mot1, vu, let);
+		affiche(mot1, vu);
+		partieFinie(vu);
+		}
+	}
+
+	static char[] motVersTab(String s) {
+
+		int c = s.length();
+		char [] tab = new char[c];
+		
+		for(int i=0; i<=c; i++) {
+			tab[i]=s.charAt(i);
+		}
+		return tab;
+	}
+	
+	static void affiche(char[] mot, boolean[] vu) {
+	        
+        for (int i=0; i<=mot.length; i++) {
+            if (vu[i]==true) {
+                
+                // affiche la lettre
+                System.out.print(mot[i]);}
+                
+                // affiche "?"
+                else {
+                    System.out.print("?");}
+        }
+	}
+	
+	static boolean[] metAJour(char[] mot, boolean[] vu, char c) {
+				        
+        for (int i = 0; i < mot.length-1; i++) {
+            if (mot[i]==c) {
+                vu[i]= true;
+            }
+            else 
+            	vu[i] = false;
+        }
+        return vu;		    
+	}
+	
+	static boolean partieFinie(boolean vu[]) {
+	        
+        boolean partie= vu[0]; 
+        
+        for (int i =0; i < vu.length; i++) {
+            if (partie != vu[i]) {
+                return false;
+            } 
+        }
+        return true;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String m = "coucou";
+		Partie(m);
+
+	}
+
+}

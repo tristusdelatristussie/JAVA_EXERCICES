@@ -1,0 +1,7 @@
+
+public class IsSeaVessel {
+
+	int etDisplacement();
+	int setDisplacement(int a);
+	
+}
